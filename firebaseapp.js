@@ -4,15 +4,14 @@ import { getFirestore, collection, addDoc} from "https://www.gstatic.com/firebas
 // Firebase configuration
 
    
-    const firebaseConfig = {
-        apiKey: "AIzaSyCYf7evrsKbudTq3lGU6AKsX-SV6Ew6ImA",
-        authDomain: "start-up-85ab5.firebaseapp.com",
-        projectId: "start-up-85ab5",
-        storageBucket: "start-up-85ab5.firebasestorage.app",
-        messagingSenderId: "501099450648",
-        appId: "1:501099450648:web:4e77be94fee4ae863e0e6d",
-        measurementId: "G-FCJESNLF6N"
-      };
+const firebaseConfig = {
+    apiKey: "AIzaSyD_6E_BM6vT3z_kgYrM_vFxefk7Kn0zgDc",
+    authDomain: "minihackathon-186bc.firebaseapp.com",
+    projectId: "minihackathon-186bc",
+    storageBucket: "minihackathon-186bc.firebasestorage.app",
+    messagingSenderId: "646290995986",
+    appId: "1:646290995986:web:5f78574592fd2cfde991cb"
+  };
       
 
 
@@ -28,7 +27,7 @@ async function addData() {
     const message = document.getElementById("message").value;
     const consent = document.getElementById("consent").checked;
     try {
-        const DocRef= await addDoc(collection(db,"identity"),{
+        const DocRef= await addDoc(collection(db,"usersId"),{
           name:name,
           surname:surname,
           email:email,
